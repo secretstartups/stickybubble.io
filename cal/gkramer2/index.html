@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecretStartups Calendar</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: brown;
+        }
+
+        .header {
+            width: 100%;
+            background-color: brown;
+            height: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        iframe {
+            width: 75%;
+            height: 75%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <!-- SecretStartups Logo -->
+        <img src="secretstartups-logo.png" alt="SecretStartups Logo">
+    </div>
+
+    <div class="content">
+        <iframe src="https://calendar.google.com/calendar/u/0/appointments/AcZssZ06z6vM0b8IspYJoC9XrSfQYdUeIbXKTwbez5I="></iframe>
+    </div>
+
+</body>
+</html>
