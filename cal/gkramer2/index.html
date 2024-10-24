@@ -1,36 +1,44 @@
+
+Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floating Frame Example</title>
+    <title>Meeting with Garron</title>
+
+    <!-- Open Graph metadata for WhatsApp -->
+    <meta property="og:title" content="SecretStartups Calendar">
+    <meta property="og:description" content="Check out our calendar with upcoming appointments!">
+    <meta property="og:image" content="https://secretstartups.org/tree-bg-500kb.jpg"> <!-- Full URL of the image -->
+    <meta property="og:url" content="https://secretstartups.org/cal/gkramer2/"> <!-- URL of the page -->
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="1200"> <!-- Standard image size for previews -->
+    <meta property="og:image:height" content="630">
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background-image: url('tree-bg-500kb.jpg');
             background-size: cover;
             background-position: center;
+            margin: 0; /* Ensure no default margins */
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .floating-frame {
-            width: 70vw; /* 70% of viewport width */
-            height: 70vh; /* 70% of viewport height */
+        iframe {
+            width: 75vw; /* 75% of viewport width */
+            height: 75vh; /* 75% of viewport height */
             border: 2px solid white;
             border-radius: 10px;
             background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
-            display: flex;
-            justify-content: center;
-            align-items: center;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
-    <div class="floating-frame">
-        <iframe src="https://calendar.google.com/calendar/u/0/appointments/AcZssZ06z6vM0b8IspYJoC9XrSfQYdUeIbXKTwbez5I="></iframe>
-    </div>
+    <iframe src="https://calendar.google.com/calendar/u/0/appointments/AcZssZ06z6vM0b8IspYJoC9XrSfQYdUeIbXKTwbez5I="></iframe>
 </body>
 </html>
