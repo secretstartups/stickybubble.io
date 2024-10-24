@@ -23,14 +23,17 @@
             background-repeat: no-repeat;
             height: 100vh; /* Full height (viewport height) */
             width: 100vw; /* Full width (viewport width) */
-            align-items: center;
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            margin: 0; /* Remove default margin */
         }
         iframe {
             width: 75vw; /* 75% of viewport width */
             height: 75vh; /* 75% of viewport height */
             border: 2px solid white;
             border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
     </style>
@@ -39,3 +42,4 @@
     <iframe src="https://calendar.google.com/calendar/u/0/appointments/AcZssZ06z6vM0b8IspYJoC9XrSfQYdUeIbXKTwbez5I="></iframe>
 </body>
 </html>
+
