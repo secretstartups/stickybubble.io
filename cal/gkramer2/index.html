@@ -3,67 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecretStartups Calendar</title>
+    <title>Floating Frame Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
+        body {
             background-image: url('tree-bg-500kb.jpg');
             background-size: cover;
             background-position: center;
-        }
-
-        .header, .footer {
-            width: 100%;
-            height: 25%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2em;
-            font-weight: bold;
-        }
-
-        .header {
-            background-color: rgba(139, 69, 19, 0.7); /* Semi-transparent brown overlay */
-        }
-
-        .footer {
-            background-color: rgba(139, 69, 19, 0.7);
-        }
-
-        .content {
-            flex-grow: 1;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
         }
-
-        iframe {
-            width: 50%;
-            height: 50%;
-            border: none;
+        .floating-frame {
+            width: 70vw; /* 70% of viewport width */
+            height: 70vh; /* 70% of viewport height */
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
-
-    <div class="header">
-        <!-- SecretStartups Logo -->
-        <img src="secretstartups-logo.png" alt="SecretStartups Logo">
+    <div class="floating-frame">
+        <a href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ06z6vM0b8IspYJoC9XrSfQYdUeIbXKTwbez5I=" target="_blank">https://calendar.google.com/calendar/u/0/appointments/AcZssZ06z6vM0b8IspYJoC9XrSfQYdUeIbXKTwbez5I=</a>
     </div>
-
-    <div class="content">
-        <iframe src="https://calendar.google.com/calendar/u/0/appointments/AcZssZ06z6vM0b8IspYJoC9XrSfQYdUeIbXKTwbez5I="></iframe>
-    </div>
-
-    <div class="footer">
-        <!-- Optional footer content -->
-    </div>
-
 </body>
 </html>
-
